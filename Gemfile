@@ -8,3 +8,4 @@ gem 'shotgun'
 gem 'omniauth-twitter'
 gem "sinatra-cross_origin"
 gem 'configatron'
+gem 'stripe'

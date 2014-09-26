@@ -1,0 +1,156 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+$border: #e6e6e6;
+$campaign-color-primary: #f26d7d;
+$font-color: #646464;
+
+body{
+    color: $font-color;
+}
+
+header{
+    h1{
+        text-align:center;
+    }
+    h2{
+        text-align: center;
+        color: $campaign-color-primary;
+    }
+    h6{
+        text-align: center;
+    }
+    a{
+        margin: 0 auto;
+        display:table;
+    }
+}
+
+.crowdfunder-item{
+    margin-top:25px;
+    margin-bottom: 25px;
+}
+
+#campaign-header{
+    .img-profile{
+        img{
+            border: 5px solid $border;
+        }
+    }
+    #profile-info{
+        margin-top:20px;
+        .name{
+            color: $campaign-color-primary;
+        }
+        .tagline{
+            font-size:1.5em;
+        }
+    }
+    padding:25px;
+    border-top: 1px solid $border;
+    border-left: 1px solid $border;
+    border-right: 1px solid $border;
+    border-bottom: 1px solid $border;
+}
+
+#campaign-stats{
+    #backer-info{
+        h2{
+            margin-top: 10px;
+            text-align: center;
+            .money-raised{
+                color: #3cb878;
+            }
+        }
+    }
+    #back-campaign-stats{
+        margin-top:5px;
+        a{
+            background-color: $campaign-color-primary;
+            border-color: $campaign-color-primary;
+            margin: 0 auto;
+            display: table;
+        }
+
+    }
+    padding:25px;
+    border-bottom: 1px solid $border;
+    border-left: 1px solid $border;
+    border-right: 1px solid $border;
+}
+
+#campaign-info{
+    #about-header{
+        color: $campaign-color-primary;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    padding:25px;
+    border-bottom: 1px solid $border;
+    border-left: 1px solid $border;
+    border-right: 1px solid $border;
+    #back-campaign-info-btn{
+        background-color: $campaign-color-primary;
+        border-color: $campaign-color-primary;
+        margin: 0 auto;
+        display: table;
+        margin-top:25px;
+    }
+}
+
+
+/* Space out content a bit */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
